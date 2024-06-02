@@ -1,5 +1,6 @@
 const express = require("express")
-const { connected } = require("./src/config/db")
+const { connected } = require("./config/db")
+ 
  
 
 
@@ -17,7 +18,7 @@ app.listen(3000, async() => {
      console.log("Server is running on port 3000")
    }
    catch(err){
-    
+
     console.log(err)
    }
 })
